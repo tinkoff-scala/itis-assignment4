@@ -1,13 +1,12 @@
-# Movies Database sorting
-We are building a movies database service. Our technical department told us that one of the main features of our service should be flexible movies sorting.
-To start with, we have a `Movie` data type which has a `name`, `releaseDate` and `rating`. 
-Our business department want users to have an ability to specify a sorting order for each of the fields.
-## Part 1
-Implement an Ordering constructor based on the provided Order type for each of the fields
-## Part 2
-Business department have told us that users are excited by our sorting algorithm. 
-But we receive a lot of feedback that there is not enough information for each movie. 
-That's why our business department came to us and told that we should extend our `Movie` with `actors`, `director` and `dvdReleaseDate`. Each person has `name`, `birthDate` and a list of `rewards`. `Reward` itself has `name` and `count` fields.
-Also, they said that the model could be extended with more fields in the future. 
-Since we are smart and lazy software engineers we want to implement a posibility of model extension in such a way that it will require minimum actions in the future.
-Come up with a solution how we can encode our model fields so we can easily add new ones to our model in the future and specify sort orders for them
+# Сортировка фильмов
+Представьте, что вам нужно создать сервис с базой данных фильмов. Технический отдел сказал, что одной из главных фич сервиса должна быть гибкая сортировка фильмов. Для начала, у нас есть тип данных `Movie` с полями `name`, `releaseDate` и `rating`.
+Бизнес департамент хочет, чтобы у пользователей была возможность отсортировать фильмы по любому из этих полей.
+## Часть 1
+Реализуйте `Ordering` конструктор на исходя из переданного `Order` для каждого из полей фильма.
+## Часть 2
+Бизнес департамент сказал, что пользователи в восторге от нашего алгоритма сортировки.
+Но мы получили большое количество отзывов, что слишком у фильмов слишком мало информации.
+Поэтому теперь от нас требуют добавить в фильмы актеров(`actors`), режисера(`director`) и дату релиза на dvd(`dvdreleasseDate`). У каждого человека есть имя, дата рождения и список наград. Награда имеет название и количество (2 оскара например).
+Также, бизнес департамент не исключил возможность расширения моделей данных в будущем.
+Так как мы умные и ленивые инженеры ПО, нам бы хотелось заложить в код возможность расширения моделей таким образом, чтобы на жто потребовалось минимальное количество усилий в будущем.
+Придумайте решение как бы мы могли закодировать поля наших моделей, чтобы мы могли легко добавлять новые в будущем, и это бы не ломало существующие сортировки.
